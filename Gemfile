@@ -8,6 +8,14 @@ gem 'rails', '3.2.13'
 # gem 'sqlite3'
 gem 'pg'
 
+group :development, :test do
+  gem 'rspec'
+  gem 'rspec-rails', '2.9.0'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
